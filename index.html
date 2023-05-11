@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+
+  <header>
+    <h1>
+      Simple, traffic-based pricing
+    </h1>
+    <p>
+      Sign-up for our 30-day trial. <br> No credit card required.
+    </p> 
+  </header>
+
+  <div class="container">
+    <section class="first-part">
+      <p class="pageviews">100K PAGEVIEWS</p>
+
+      <div class="slidercontainer">
+        <input type="range" min="1" max="32" value="16" id="myRange" class="slider">
+      </div>
+
+      <div class="price-div">
+        <h1 id="price">$16.00</h1>
+        <p id="month">/ month</p>
+      </div>
+    </section>
+
+    <div class="container2">
+      <div class="yearly">
+        <p>Monthly Billing</p>
+        <div class="switch">
+          <input type="checkbox" id="toggleAll" />
+          <label for="toggleAll"></label>
+        </div>
+        <p>Yearly Billing</p>
+        <div class="discount">
+          <h2>-25%</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="rectangle"></div>
+
+    <section class="last-part">
+      <div class="last-part-div">
+        <h1>
+          <img src="./images/icon-check.svg" alt="">
+          Unlimited websites
+        </h1>
+        <h1>
+          <img src="./images/icon-check.svg" alt="">
+          100% data ownership
+        </h1>
+        <h1>
+          <img src="./images/icon-check.svg" alt="">
+          Email reports
+        </h1>
+      </div>
+
+      <button class="trial">Start my trial</button>
+    </section>
+
+  </div>
+
+  <script src="main.js"></script>
+  
+  
+</body>
+</html>
